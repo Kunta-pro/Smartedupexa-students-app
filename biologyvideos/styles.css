@@ -35,7 +35,7 @@ video {
 /* Main Content (Topic Tiles) */
 .content {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+  grid-template-columns: repeat(2, 1fr); /* Four equal-width columns */
   gap: 20px;
   padding: 20px;
 }
