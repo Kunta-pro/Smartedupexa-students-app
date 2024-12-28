@@ -134,4 +134,3 @@ const syllabusChart = new Chart(syllabusCtx, {
         responsive: true,
     }
 });
-
