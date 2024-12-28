@@ -1,40 +1,52 @@
-// Array of predefined usernames and passwords (you can customize these later)
-const validUsers = [
+// JavaScript to handle login, payment dial, and WhatsApp message
+
+// Dummy data for login (can be customized later)
+const users = [
     { username: "user1", password: "password1" },
     { username: "user2", password: "password2" },
-    { username: "admin", password: "admin123" },
+    { username: "user3", password: "password3" },
 ];
 
-// Handle Login
-function handleLogin(event) {
-    event.preventDefault();
-
+// Function to handle login form submission
+function handleLogin() {
     const username = document.getElementById('username').value;
     const password = document.getElementById('password').value;
-
-    // Check if the entered credentials match any in the validUsers array
-    const user = validUsers.find(user => user.username === username && user.password === password);
-
+    
+    // Check if user credentials are correct
+    const user = users.find(user => user.username === username && user.password === password);
+    
     if (user) {
-        // Redirect to the subjects page upon successful login
+        // Redirect to the Smartedupexa subjects page if login is successful
         window.location.href = "https://kunta-pro.github.io/Smartedupexa-students-app/subjects";
     } else {
-        alert("Invalid username or password. Please try again.");
+        alert("Invalid username or password.");
     }
 }
 
-// Payment Dialer functions
-function dialMTN() {
-    alert("Dialing: *165*3#");
-}
-
-function dialAirtel() {
-    alert("Dialing: *185*9#");
-}
-
-// Create Account function to redirect to WhatsApp with a message
-function createAccount() {
+// Function to handle registration button and redirect to WhatsApp
+function handleRegistration() {
     const message = "Hello, create for me an account on Smartedupexa";
-    const url = `https://wa.me/256742311870?text=${encodeURIComponent(message)}`;
-    window.open(url, "_blank");
+    const whatsappUrl = `https://wa.me/256742311870?text=${encodeURIComponent(message)}`;
+    
+    window.open(whatsappUrl, "_blank");
+}
+
+// Function to dial MTN USSD code (*165*3#) automatically on mobile
+function dialMTN() {
+    const ussdCode = "*165*3#";
+    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+        window.location.href = `tel:${ussdCode}`;
+    } else {
+        alert("This feature is only supported on mobile devices.");
+    }
+}
+
+// Function to dial Airtel USSD code (*185*9#) automatically on mobile
+function dialAirtel() {
+    const ussdCode = "*185*9#";
+    if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/iPhone|iPad|iPod/i)) {
+        window.location.href = `tel:${ussdCode}`;
+    } else {
+        alert("This feature is only supported on mobile devices.");
+    }
 }
