@@ -3,67 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biology Dashboard</title>
+    <title>Biology Classroom Dashboard</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-    <div class="header">
-        <h1>Biology Classroom</h1>
-    </div>
 
+    <header class="header">
+        <h1>Biology Classroom</h1>
+    </header>
+
+    <!-- Main Content (Dashboard) -->
     <div class="content">
-        <!-- Main Biology Classroom Chart -->
-        <div class="tile main-tile">
-            <h2>Biology Classroom</h2>
+        <!-- Main Chart (Biology Class) -->
+        <div class="tile chart">
+            <h3>Biology Class Progress</h3>
             <canvas id="biologyCanvas"></canvas>
         </div>
 
-        <!-- Teachers and Students Tile -->
-        <div class="tile info-tile">
-            <h3>Teachers</h3>
-            <div class="tile-info">
-                <i class="fas fa-chalkboard-teacher"></i>
-                <span id="teachersNumber">10</span>
-            </div>
+        <!-- Toggle Chart (Teachers and Students) -->
+        <div class="tile chart">
+            <h3>Teachers vs Students</h3>
+            <canvas id="toggleCanvas"></canvas>
         </div>
 
-        <div class="tile info-tile">
-            <h3>Students</h3>
-            <div class="tile-info">
-                <i class="fas fa-user-graduate"></i>
-                <span id="studentsNumber">100</span>
-            </div>
-        </div>
-
-        <!-- 6 Tiles for Syllabus-related Info -->
-        <div class="tile link-tile" id="notesTile">
+        <!-- Syllabus-related Charts (Small tiles) -->
+        <div class="tile">
             <h3>Notes</h3>
-            <i class="fas fa-file-alt"></i>
+            <canvas id="notesCanvas"></canvas>
+            <a href="https://your-github-link-for-notes.com" target="_blank">Go to Notes</a>
         </div>
-        <div class="tile link-tile" id="videosTile">
+
+        <div class="tile">
             <h3>Videos</h3>
-            <i class="fas fa-video"></i>
+            <canvas id="videosCanvas"></canvas>
+            <a href="https://your-github-link-for-videos.com" target="_blank">Go to Videos</a>
         </div>
-        <div class="tile link-tile" id="assignmentsTile">
+
+        <div class="tile">
             <h3>Assignments</h3>
-            <i class="fas fa-pencil-alt"></i>
+            <canvas id="assignmentsCanvas"></canvas>
+            <a href="https://your-github-link-for-assignments.com" target="_blank">Go to Assignments</a>
         </div>
-        <div class="tile link-tile" id="coveredTopicsTile">
+
+        <div class="tile">
             <h3>Covered Topics</h3>
-            <i class="fas fa-book"></i>
+            <canvas id="coveredTopicsCanvas"></canvas>
+            <a href="https://your-github-link-for-covered-topics.com" target="_blank">Go to Covered Topics</a>
         </div>
-        <div class="tile link-tile" id="uncoveredTopicsTile">
+
+        <div class="tile">
             <h3>Uncovered Topics</h3>
-            <i class="fas fa-book-reader"></i>
+            <canvas id="uncoveredTopicsCanvas"></canvas>
+            <a href="https://your-github-link-for-uncovered-topics.com" target="_blank">Go to Uncovered Topics</a>
         </div>
-        <div class="tile link-tile" id="syllabusTile">
+
+        <div class="tile">
             <h3>Syllabus</h3>
-            <i class="fas fa-list-alt"></i>
+            <canvas id="syllabusCanvas"></canvas>
+            <a href="https://your-github-link-for-syllabus.com" target="_blank">Go to Syllabus</a>
         </div>
     </div>
 
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
+    <!-- Ads Section -->
+    <div class="ads">
+        <div class="ad-banner">
+            <p>Advertise with us! Your ad can go here.</p>
+        </div>
+        <div class="ad-banner">
+            <p>Buy our product - Great deals inside!</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="script.js"></script>
+
 </body>
 </html>
