@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biology Class Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Main container -->
+  <div class="container">
+
+    <!-- Main Title and First Chart (Biology Class) -->
+    <section class="main-chart">
+      <h1>Biology Class</h1>
+      <div class="chart" id="biologyChart">
+        <canvas id="biologyCanvas"></canvas>
+      </div>
+    </section>
+
+    <!-- Teachers and Students Toggle Chart -->
+    <section class="toggle-chart">
+      <h2>Teachers and Students</h2>
+      <div class="toggle-buttons">
+        <button id="teachersBtn">Teachers</button>
+        <button id="studentsBtn">Students</button>
+      </div>
+      <div class="chart" id="toggleChart">
+        <canvas id="toggleCanvas"></canvas>
+      </div>
+    </section>
+
+    <!-- 6 Smaller Charts (Syllabus) -->
+    <section class="small-charts">
+      <div class="chart small-chart" id="notesChart">
+        <i class="icon">📄</i><p>Notes</p>
+        <canvas id="notesCanvas"></canvas>
+      </div>
+      <div class="chart small-chart" id="videosChart">
+        <i class="icon">🎥</i><p>Videos</p>
+        <canvas id="videosCanvas"></canvas>
+      </div>
+      <div class="chart small-chart" id="coveredTopicsChart">
+        <i class="icon">📚</i><p>Covered Topics</p>
+        <canvas id="coveredTopicsCanvas"></canvas>
+      </div>
+      <div class="chart small-chart" id="uncoveredTopicsChart">
+        <i class="icon">🔎</i><p>Uncovered Topics</p>
+        <canvas id="uncoveredTopicsCanvas"></canvas>
+      </div>
+      <div class="chart small-chart" id="syllabusLinkChart">
+        <i class="icon">🔗</i><p><a href="#">Link</a></p>
+      </div>
+      <div class="chart small-chart" id="resourceLinkChart">
+        <i class="icon">🔗</i><p><a href="#">Resource Link</a></p>
+      </div>
+    </section>
+  
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
