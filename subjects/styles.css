@@ -2,7 +2,7 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: white; /* Change the overall background to white */
+  background-color: white; /* White overall background */
   color: #000000; /* Set text color to black */
 }
 
@@ -45,16 +45,17 @@ body {
 .content {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
-  gap: 20px; /* Space between cards */
+  grid-template-rows: repeat(8, 1fr); /* Eight rows for charts */
+  gap: 20px; /* Space between charts */
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Subject Cards */
-.subject-card {
-  background: #ffffff; /* White background for subject cards */
-  color: black; /* Black text color */
+/* Chart Cards */
+.chart-card {
+  background: #8a2be2; /* Purple background for the charts */
+  color: white; /* White text color */
   border: none;
   border-radius: 10px;
   padding: 20px;
@@ -66,25 +67,23 @@ body {
   justify-content: center;
   align-items: center;
   height: auto; /* Flexible height based on content */
-  min-height: 250px; /* Minimum height for uniformity */
   width: 100%; /* Take full width of the grid column */
   box-sizing: border-box; /* Ensure padding is included in width calculation */
 }
 
-.subject-card i {
+.chart-card i {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.subject-card:hover {
+.chart-card:hover {
   transform: scale(1.05);
-  background: #007a00;
-  color: white; /* Change text color on hover */
+  background: #7f00ff; /* Darker purple on hover */
 }
 
-/* Chart Background (Green) */
+/* Chart Background (Purple) */
 .chart-background {
-  background: linear-gradient(to bottom, #004d00, #002600); /* Green background for the chart */
+  background: linear-gradient(to bottom, #800080, #4b0082); /* Purple gradient background for the chart */
 }
 
 /* Popup Styles */
