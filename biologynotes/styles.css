@@ -2,13 +2,13 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: white; /* White background for the page */
+  background-color: white;
   color: #333;
 }
 
 /* Header */
 .header {
-  background: #8a2be2; /* Purple background for header */
+  background: #8a2be2;
   padding: 20px;
   text-align: center;
 }
@@ -28,7 +28,7 @@ body {
 }
 
 .tile {
-  background: #8a2be2; /* Purple background for tiles */
+  background: #8a2be2;
   color: white;
   padding: 20px;
   text-align: center;
@@ -36,8 +36,9 @@ body {
   transition: transform 0.3s;
 }
 
-.tile i {
-  font-size: 40px;
+.tile-icon {
+  width: 50px;
+  height: 50px;
   margin-bottom: 10px;
 }
 
