@@ -1,67 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Biology Class Dashboard</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biology Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
-
-  <!-- Header -->
-  <div class="header">
-    <h1>Biology Class</h1>
-  </div>
-
-  <!-- Main Content (Dashboard) -->
-  <div class="content">
-    <!-- Main Chart: Biology Class -->
-    <div class="chart-card chart-background">
-      <h2>Biology Class Overview</h2>
-      <div class="chart" id="biology-chart">[Chart Here]</div>
+    <div class="header">
+        <h1>Biology Classroom</h1>
     </div>
 
-    <!-- Toggleable Charts for Teachers and Students -->
-    <div class="chart-card chart-background">
-      <h2>Teachers / Students</h2>
-      <div class="toggle-buttons">
-        <button onclick="toggleContent('teachers')">Teachers</button>
-        <button onclick="toggleContent('students')">Students</button>
-      </div>
-      <div class="content-toggle" id="content-toggle">
-        <p>Choose to display Teachers or Students</p>
-      </div>
+    <div class="content">
+        <!-- Main Biology Classroom Chart -->
+        <div class="tile">
+            <h2>Biology Classroom</h2>
+            <canvas id="biologyCanvas"></canvas>
+        </div>
+
+        <!-- Teachers and Students Tile -->
+        <div class="tile">
+            <h3>Number of Teachers</h3>
+            <div class="tile-info">
+                <i class="fas fa-chalkboard-teacher"></i>
+                <span id="teachersNumber">10</span>
+            </div>
+        </div>
+
+        <div class="tile">
+            <h3>Number of Students</h3>
+            <div class="tile-info">
+                <i class="fas fa-user-graduate"></i>
+                <span id="studentsNumber">100</span>
+            </div>
+        </div>
+
+        <!-- 6 Tiles for Syllabus-related Info -->
+        <div class="tile" id="notesTile">
+            <h3>Notes</h3>
+            <i class="fas fa-file-alt"></i>
+        </div>
+        <div class="tile" id="videosTile">
+            <h3>Videos</h3>
+            <i class="fas fa-video"></i>
+        </div>
+        <div class="tile" id="assignmentsTile">
+            <h3>Assignments</h3>
+            <i class="fas fa-pencil-alt"></i>
+        </div>
+        <div class="tile" id="coveredTopicsTile">
+            <h3>Covered Topics</h3>
+            <i class="fas fa-book"></i>
+        </div>
+        <div class="tile" id="uncoveredTopicsTile">
+            <h3>Uncovered Topics</h3>
+            <i class="fas fa-book-reader"></i>
+        </div>
+        <div class="tile" id="syllabusTile">
+            <h3>Syllabus</h3>
+            <i class="fas fa-list-alt"></i>
+        </div>
     </div>
 
-    <!-- Small Charts (Syllabus) - Linking to GitHub Pages or External Pages -->
-    <div class="chart-card chart-background">
-      <h3><i class="fas fa-book"></i> Notes</h3>
-      <a href="https://github.com/your-repo/notes-page" target="_blank" class="chart-link">Go to Notes</a>
-    </div>
-    <div class="chart-card chart-background">
-      <h3><i class="fas fa-video"></i> Videos</h3>
-      <a href="https://github.com/your-repo/videos-page" target="_blank" class="chart-link">Go to Videos</a>
-    </div>
-    <div class="chart-card chart-background">
-      <h3><i class="fas fa-check-circle"></i> Covered Topics</h3>
-      <a href="https://github.com/your-repo/covered-topics" target="_blank" class="chart-link">Go to Covered Topics</a>
-    </div>
-    <div class="chart-card chart-background">
-      <h3><i class="fas fa-times-circle"></i> Uncovered Topics</h3>
-      <a href="https://github.com/your-repo/uncovered-topics" target="_blank" class="chart-link">Go to Uncovered Topics</a>
-    </div>
-    <div class="chart-card chart-background">
-      <h3><i class="fas fa-file-alt"></i> Assignments</h3>
-      <a href="https://github.com/your-repo/assignments" target="_blank" class="chart-link">Go to Assignments</a>
-    </div>
-    <div class="chart-card chart-background">
-      <h3><i class="fas fa-users"></i> Discussions</h3>
-      <a href="https://github.com/your-repo/discussions" target="_blank" class="chart-link">Go to Discussions</a>
-    </div>
-  </div>
-
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script src="scripts.js"></script>
-
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script> <!-- For icons -->
+    <script src="script.js"></script>
 </body>
 </html>
