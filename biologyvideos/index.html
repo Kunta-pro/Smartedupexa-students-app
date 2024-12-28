@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biology Videos</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Biology Classroom Videos</h1>
+  </div>
+
+  <!-- Video Player Section -->
+  <div class="video-player-container">
+    <video id="videoPlayer" width="100%" controls>
+      <source id="videoSource" src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"> <!-- Default Video -->
+      Your browser does not support the video tag.
+    </video>
+  </div>
+
+  <!-- Main Content (Topic Tiles) -->
+  <div class="content">
+    <!-- Tile 1: Introduction to Biology -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-book-open tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Introduction to Biology</a>
+    </div>
+    
+    <!-- Tile 2: The Cell -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-cogs tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">The Cell</a>
+    </div>
+    
+    <!-- Tile 3: Classification -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-flask tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Classification</a>
+    </div>
+    
+    <!-- Tile 4: Five Kingdom System -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-tree tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Five Kingdom System</a>
+    </div>
+    
+    <!-- Tile 5: Viruses -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-virus tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Viruses</a>
+    </div>
+    
+    <!-- Tile 6: Insects -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-bug tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Insects</a>
+    </div>
+    
+    <!-- Tile 7: Flowering Plants -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-leaf tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Flowering Plants</a>
+    </div>
+    
+    <!-- Tile 8: Soil -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-seedling tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Soil</a>
+    </div>
+    
+    <!-- Tile 9: Nutrients and Disorders -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-pills tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Nutrients and Disorders</a>
+    </div>
+    
+    <!-- Tile 10: Nutrition in Plants -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-cogs tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Nutrition in Plants</a>
+    </div>
+    
+    <!-- Tile 11: Nutrition in Animals -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-heartbeat tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Nutrition in Animals</a>
+    </div>
+    
+    <!-- Tile 12: Movement in and Out of a Cell -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-share-alt tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Movement in and Out of a Cell</a>
+    </div>
+    
+    <!-- Tile 13: Transport in Plants -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-leaf tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Transport in Plants</a>
+    </div>
+    
+    <!-- Tile 14: Transport in Animals -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-heart tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Transport in Animals</a>
+    </div>
+    
+    <!-- Tile 15: Gaseous Exchange -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-cloud tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Gaseous Exchange</a>
+    </div>
+    
+    <!-- Tile 16: Respiration -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-running tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Respiration</a>
+    </div>
+    
+    <!-- Tile 17: Excretion -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-toilet-paper tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Excretion</a>
+    </div>
+    
+    <!-- Tile 18: Coordination -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-brain tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Coordination</a>
+    </div>
+    
+    <!-- Tile 19: Locomotion -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-walking tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Locomotion</a>
+    </div>
+    
+    <!-- Tile 20: Growth -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-balance-scale tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Growth</a>
+    </div>
+    
+    <!-- Tile 21: Development -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-seedling tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Development</a>
+    </div>
+    
+    <!-- Tile 22: Reproduction -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-heart tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Reproduction</a>
+    </div>
+    
+    <!-- Tile 23: Genetics -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/mov_bbb.mp4')">
+      <i class="fas fa-dna tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Genetics</a>
+    </div>
+    
+    <!-- Tile 24: Ecology -->
+    <div class="tile" onclick="loadVideo('https://www.w3schools.com/html/movie.mp4')">
+      <i class="fas fa-globe tile-icon"></i>
+      <a href="javascript:void(0);" class="tile-link">Ecology</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
