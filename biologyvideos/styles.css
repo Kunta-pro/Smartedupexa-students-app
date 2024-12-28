@@ -1,0 +1,74 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: #333;
+}
+
+/* Header */
+.header {
+  background: #8a2be2;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 24px;
+  color: white;
+}
+
+/* Video Player */
+.video-player-container {
+  padding: 20px;
+  text-align: center;
+}
+
+video {
+  max-width: 100%;
+  border: 2px solid #8a2be2;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Main Content (Topic Tiles) */
+.content {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
+  gap: 20px;
+  padding: 20px;
+}
+
+.tile {
+  background: #8a2be2;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.tile-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.tile a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+}
+
+.tile:active {
+  transform: scale(1);
+}
+
+.tile a:hover {
+  text-decoration: underline;
+}
