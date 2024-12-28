@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- FontAwesome CDN for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Login Form Section -->
+    <div class="login-container">
+        <h2>Login</h2>
+
+        <!-- Login Form -->
+        <form id="loginForm" onsubmit="return handleLogin(event)">
+            <div class="input-group">
+                <label for="username"><i class="fas fa-user"></i> Username</label>
+                <input type="text" id="username" name="username" placeholder="Enter username" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password"><i class="fas fa-lock"></i> Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter password" required>
+            </div>
+
+            <button type="submit" class="btn login-btn">
+                <i class="fas fa-sign-in-alt"></i> Login
+            </button>
+
+            <a href="#" class="forgot-password"><i class="fas fa-question-circle"></i> Forgot password?</a>
+        </form>
+
+        <!-- Payment Options -->
+        <div class="payment-options">
+            <button class="payment-btn mtn-btn" onclick="dialMTN()">
+                <i class="fab fa-android"></i> MTN
+            </button>
+            <button class="payment-btn airtel-btn" onclick="dialAirtel()">
+                <i class="fab fa-android"></i> Airtel
+            </button>
+        </div>
+
+        <!-- Create Account Button -->
+        <button class="btn create-account-btn" onclick="createAccount()">
+            <i class="fas fa-user-plus"></i> Create Account
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
