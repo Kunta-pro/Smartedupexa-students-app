@@ -2,8 +2,8 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background: linear-gradient(to bottom, #004d00, #002600);
-  color: #ffffff;
+  background-color: white; /* Change the overall background to white */
+  color: #000000; /* Set text color to black */
 }
 
 /* Header */
@@ -80,6 +80,11 @@ body {
   transform: scale(1.05);
   background: #007a00;
   color: white; /* Change text color on hover */
+}
+
+/* Chart Background (Green) */
+.chart-background {
+  background: linear-gradient(to bottom, #004d00, #002600); /* Green background for the chart */
 }
 
 /* Popup Styles */
