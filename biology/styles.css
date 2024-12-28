@@ -33,7 +33,7 @@ body {
 .tile {
     background-color: purple;
     color: white;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     text-align: center;
     transition: transform 0.3s;
@@ -42,7 +42,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 200px;
+    height: 150px;
 }
 
 .tile:hover {
@@ -51,10 +51,22 @@ body {
 
 .tile h3 {
     margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Info Tiles (Teachers/Students) */
+.info-tile {
+    grid-column: span 2; /* Makes them span across 2 columns */
+}
+
+/* Link Tiles (Notes, Videos, etc.) */
+.link-tile {
+    height: 120px;
+    font-size: 16px;
 }
 
 .tile-info {
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .tile i {
@@ -62,7 +74,7 @@ body {
     margin-bottom: 10px;
 }
 
-/* Tile Grid for 2 Rows and 3 Columns */
+/* Adjust grid layout */
 .tile:nth-child(4), .tile:nth-child(5), .tile:nth-child(6) {
     grid-column: span 1;
 }
