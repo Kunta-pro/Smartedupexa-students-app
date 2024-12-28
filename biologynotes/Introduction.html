@@ -3,34 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Comprehensive Biology Notes">
-  <title>Biology Notes</title>
+  <title>Introduction to Biology</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   <style>
     body {
       font-family: Arial, sans-serif;
-      line-height: 1.6;
+      background-color: #f9f9f9;
       margin: 0;
-      padding: 0;
-      background-color: #f4f4f9;
-      color: #333;
+      padding: 20px;
     }
-    header {
-      background: #6c63ff;
-      color: #fff;
-      padding: 10px 20px;
+    .header {
+      background-color: purple;
+      color: white;
+      padding: 15px;
       text-align: center;
     }
-    .container {
-      max-width: 900px;
-      margin: 20px auto;
-      padding: 20px;
-      background: #fff;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    .content {
+      margin: 20px 0;
     }
-    h1, h2, h3 {
-      color: #6c63ff;
+    .content img {
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    .audio-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: purple;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      margin: 20px 0;
+    }
+    .audio-button:hover {
+      background-color: #5e3370;
     }
     table {
       width: 100%;
@@ -43,139 +51,108 @@
       text-align: left;
     }
     table th {
-      background: #6c63ff;
-      color: #fff;
-    }
-    .audio-player {
-      margin: 20px 0;
-    }
-    img {
-      display: block;
-      max-width: 100%;
-      height: auto;
-      margin: 10px 0;
+      background-color: purple;
+      color: white;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <h1>Biology Notes</h1>
-  <p>Comprehensive study material for Biology students</p>
-</header>
-
-<div class="container">
-  <!-- Audio Player -->
-  <div class="audio-player">
-    <audio controls>
-      <source src="your-audio-file.mp3" type="audio/mp3">
-      Your browser does not support the audio element.
-    </audio>
+  <!-- Header Section -->
+  <div class="header">
+    <h1>Introduction to Biology</h1>
   </div>
 
-  <!-- Notes Content -->
-  <h2>1.1 Meaning of Biology</h2>
-  <p>
-    Biology is a word derived from two Greek words:
-    <ul>
-      <li><strong>Bios</strong>: Meaning life</li>
-      <li><strong>Logos</strong>: Meaning knowledge</li>
-    </ul>
-    Biology is a branch of science that deals with the study of life.
-  </p>
+  <!-- Audio Button -->
+  <button class="audio-button" onclick="playAudio()">Play Audio</button>
+  <audio id="audio-player" src="https://example.com/audio/introduction.mp3"></audio>
 
-  <h2>1.2 Biology in Everyday Life</h2>
-  <p>Biology helps us in many ways:</p>
-  <ul>
-    <li>Understanding our bodies and their functions.</li>
-    <li>Preventing, curing, and eliminating diseases through research.</li>
-    <li>Guiding on proper diets and exercise routines.</li>
-    <li>Understanding and conserving our environment.</li>
-    <li>Enhancing farming practices and ensuring food security.</li>
-    <li>Providing career opportunities like medicine, pharmacy, and veterinary sciences.</li>
-  </ul>
+  <!-- Content Section -->
+  <div class="content">
+    <h2>1.1 Meaning of Biology</h2>
+    <p>
+      Biology is a word derived from two Greek words: 
+      <strong>"Bios"</strong> meaning life and <strong>"Logos"</strong> meaning knowledge.
+      It is a branch of science that deals with the study of life.
+    </p>
+    <img src="https://via.placeholder.com/600x400.png?text=Biology+Life" alt="Biology Life Image">
 
-  <h2>1.3 Branches of Biology</h2>
-  <table>
-    <thead>
+    <h2>1.2 Biology in Everyday Life</h2>
+    <p>
+      Biology helps us understand our bodies and how they function. It enables us to prevent, cure, and eliminate diseases.
+      Nutritionists use Biology to create balanced diets, while athletes use it to understand how their bodies work during exercise.
+    </p>
+    <img src="https://via.placeholder.com/600x400.png?text=Biology+and+Health" alt="Biology and Health Image">
+    <p>
+      Biology also plays a crucial role in farming practices, environmental conservation, and biotechnology. Careers linked to Biology include medicine, pharmacy, and veterinary sciences.
+    </p>
+
+    <h2>1.3 Branches of Biology</h2>
+    <table>
       <tr>
         <th>Branch</th>
         <th>Description</th>
       </tr>
-    </thead>
-    <tbody>
       <tr>
         <td>Botany</td>
-        <td>Study of plants</td>
+        <td>The study of plants.</td>
       </tr>
       <tr>
         <td>Zoology</td>
-        <td>Study of animals</td>
-      </tr>
-      <tr>
-        <td>Anatomy</td>
-        <td>Study of the structure of living things</td>
-      </tr>
-      <tr>
-        <td>Genetics</td>
-        <td>Study of inheritance</td>
+        <td>The study of animals.</td>
       </tr>
       <tr>
         <td>Ecology</td>
-        <td>Study of how organisms relate to their environment</td>
+        <td>The study of organisms and their environment.</td>
       </tr>
-    </tbody>
-  </table>
+      <tr>
+        <td>Genetics</td>
+        <td>The study of inheritance.</td>
+      </tr>
+      <tr>
+        <td>Microbiology</td>
+        <td>The study of microorganisms.</td>
+      </tr>
+    </table>
 
-  <h2>1.4 Characteristics of Living Things</h2>
-  <ul>
-    <li><strong>Nutrition</strong>: Process of obtaining food for energy and growth.</li>
-    <li><strong>Respiration</strong>: Breaking down food to release energy.</li>
-    <li><strong>Excretion</strong>: Removing waste products from the body.</li>
-    <li><strong>Reproduction</strong>: Giving rise to new organisms.</li>
-    <li><strong>Movement</strong>: Transfer of parts of an organism in a given direction.</li>
-    <li><strong>Locomotion</strong>: Whole organism moving from one place to another.</li>
-    <li><strong>Growth</strong>: Permanent increase in size.</li>
-    <li><strong>Irritability</strong>: Responding to stimuli in the environment.</li>
-  </ul>
+    <h2>1.4 Characteristics of Living Things</h2>
+    <ul>
+      <li><strong>Nutrition:</strong> The process by which living things obtain food for energy and growth.</li>
+      <li><strong>Respiration:</strong> Breaking down food to release energy in the body.</li>
+      <li><strong>Excretion:</strong> Removal of waste products from the body.</li>
+      <li><strong>Reproduction:</strong> The ability of organisms to produce offspring.</li>
+      <li><strong>Growth:</strong> A permanent increase in size of an organism.</li>
+    </ul>
+    <img src="https://via.placeholder.com/600x400.png?text=Living+Things" alt="Living Things Image">
 
-  <h2>Differences Between Plants and Animals</h2>
-  <table>
-    <thead>
+    <h2>1.5 Differences Between Plants and Animals</h2>
+    <table>
       <tr>
         <th>Plants</th>
         <th>Animals</th>
       </tr>
-    </thead>
-    <tbody>
       <tr>
-        <td>Have a cell wall</td>
-        <td>Lack a cell wall</td>
+        <td>Have a cell wall.</td>
+        <td>Do not have a cell wall.</td>
       </tr>
       <tr>
-        <td>Perform photosynthesis</td>
-        <td>Feed on pre-made food</td>
+        <td>Have chlorophyll and make their own food.</td>
+        <td>Feed on already-made food.</td>
       </tr>
       <tr>
-        <td>Growth occurs throughout life</td>
-        <td>Growth stops after maturity</td>
+        <td>Growth occurs throughout life.</td>
+        <td>Growth stops after maturity.</td>
       </tr>
-    </tbody>
-  </table>
+    </table>
+    <img src="https://via.placeholder.com/600x400.png?text=Plants+vs+Animals" alt="Plants vs Animals Image">
+  </div>
 
-  <h2>Life Forms of Organisms</h2>
-  <p>
-    Organisms can be unicellular or multicellular:
-    <ul>
-      <li><strong>Unicellular</strong>: Made up of one cell (e.g., Amoeba, Bacteria).</li>
-      <li><strong>Multicellular</strong>: Made up of many cells (e.g., Humans, Elephants).</li>
-    </ul>
-  </p>
-
-  <!-- Sample Image -->
-  <img src="https://via.placeholder.com/800x400.png?text=Biology+Image" alt="Biology Example Image">
-
-</div>
-
+  <!-- Script for Audio Button -->
+  <script>
+    function playAudio() {
+      const audio = document.getElementById('audio-player');
+      audio.play();
+    }
+  </script>
 </body>
 </html>
