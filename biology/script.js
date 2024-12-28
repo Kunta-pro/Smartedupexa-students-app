@@ -102,3 +102,41 @@ const uncoveredTopicsChart = new Chart(uncoveredTopicsCtx, {
     responsive: true,
   }
 });
+
+// Additional chart for Assignments or any other chart you'd like to add
+const assignmentsCtx = document.getElementById('assignmentsCanvas').getContext('2d');
+const assignmentsChart = new Chart(assignmentsCtx, {
+  type: 'bar',
+  data: {
+    labels: ['Assignments'],
+    datasets: [{
+      label: 'Assignments Progress',
+      data: [70],
+      backgroundColor: '#8a2be2',
+    }]
+  },
+  options: {
+    responsive: true,
+  }
+});
+
+// Adding click event listeners to the small charts to redirect to specific GitHub Pages
+document.getElementById('notesCanvas').addEventListener('click', function() {
+  window.location.href = 'https://your-github-page-url-for-notes';
+});
+
+document.getElementById('videosCanvas').addEventListener('click', function() {
+  window.location.href = 'https://your-github-page-url-for-videos';
+});
+
+document.getElementById('coveredTopicsCanvas').addEventListener('click', function() {
+  window.location.href = 'https://your-github-page-url-for-covered-topics';
+});
+
+document.getElementById('uncoveredTopicsCanvas').addEventListener('click', function() {
+  window.location.href = 'https://your-github-page-url-for-uncovered-topics';
+});
+
+document.getElementById('assignmentsCanvas').addEventListener('click', function() {
+  window.location.href = 'https://your-github-page-url-for-assignments';
+});
