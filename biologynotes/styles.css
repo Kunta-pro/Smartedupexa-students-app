@@ -1,57 +1,94 @@
-/* General Styles */
+/* General styles */
 body {
   margin: 0;
-  padding: 0;
   font-family: Arial, sans-serif;
-  background-color: white;
+  background-color: white; /* White background for the page */
   color: #333;
 }
 
+/* Header */
 .header {
-  background-color: purple;
-  color: white;
-  text-align: center;
+  background: #8a2be2; /* Purple background for header */
   padding: 20px;
+  text-align: center;
 }
 
-h1 {
+.header h1 {
   margin: 0;
+  font-size: 24px;
+  color: white;
 }
 
+/* Main Content (Tiles) */
 .content {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: repeat(4, 1fr); /* Four equal-width columns */
   gap: 20px;
   padding: 20px;
-  margin-top: 30px;
 }
 
-/* Tile Styles */
 .tile {
-  background-color: purple;
+  background: #8a2be2; /* Purple background for tiles */
   color: white;
-  border-radius: 10px;
   padding: 20px;
   text-align: center;
-  cursor: pointer;
+  border-radius: 10px;
   transition: transform 0.3s;
 }
 
-.tile:hover {
-  transform: scale(1.05);
-}
-
-.tile-link {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-}
-
-.tile-link i {
+.tile i {
   font-size: 40px;
   margin-bottom: 10px;
 }
 
-.tile-link:hover {
-  color: lightgray;
+.tile a {
+  display: block;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  margin-top: 10px;
+}
+
+.tile:hover {
+  transform: scale(1.05);
+  background: #6a1b9a;
+}
+
+/* Advert Banner */
+.advert-banner {
+  background-image: url('https://via.placeholder.com/1500x400.png?text=Advert+Banner'); /* Replace with your banner image URL */
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.advert-content h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.advert-content p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.advert-link {
+  padding: 10px 20px;
+  background-color: #8a2be2;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+}
+
+.advert-link:hover {
+  background-color: #6a1b9a;
 }
