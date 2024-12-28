@@ -1,6 +1,3 @@
-.popup {
-  position: fixed;
-  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
@@ -21,16 +18,5 @@
   padding: 20px;
   border-radius: 10px;
   text-align: center;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Two columns */
-  grid-template-rows: repeat(8, auto); /* Eight rows */
-  gap: 10px; /* Space between tiles */
 }
 
-.popup-content .tile {
-  background-color: purple; /* Purple background for tiles */
-  color: white; /* White text inside the tile */
-  padding: 15px;
-  border-radius: 5px;
-  text-align: center;
-}
