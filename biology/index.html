@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biology Classroom Dashboard</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Add FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
 
@@ -16,43 +18,51 @@
     <div class="content">
         <!-- Main Chart (Biology Class) -->
         <div class="tile chart" onclick="window.location.href='https://your-github-link-for-biology-class.com'">
+            <i class="fas fa-flask fa-2x"></i> <!-- Icon for Biology -->
             <h3>Biology Class Progress</h3>
             <canvas id="biologyCanvas"></canvas>
         </div>
 
         <!-- Toggle Chart (Teachers and Students) -->
         <div class="tile chart" onclick="window.location.href='https://your-github-link-for-teachers-vs-students.com'">
+            <i class="fas fa-users fa-2x"></i> <!-- Icon for Teachers and Students -->
             <h3>Teachers vs Students</h3>
             <canvas id="toggleCanvas"></canvas>
         </div>
 
         <!-- Syllabus-related Charts (Small tiles) -->
         <div class="tile" onclick="window.location.href='https://your-github-link-for-notes.com'">
+            <i class="fas fa-book fa-2x"></i> <!-- Icon for Notes -->
             <h3>Notes</h3>
             <canvas id="notesCanvas"></canvas>
         </div>
 
         <div class="tile" onclick="window.location.href='https://your-github-link-for-videos.com'">
+            <i class="fas fa-video fa-2x"></i> <!-- Icon for Videos -->
             <h3>Videos</h3>
             <canvas id="videosCanvas"></canvas>
         </div>
 
         <div class="tile" onclick="window.location.href='https://your-github-link-for-assignments.com'">
+            <i class="fas fa-edit fa-2x"></i> <!-- Icon for Assignments -->
             <h3>Assignments</h3>
             <canvas id="assignmentsCanvas"></canvas>
         </div>
 
         <div class="tile" onclick="window.location.href='https://your-github-link-for-covered-topics.com'">
+            <i class="fas fa-book-reader fa-2x"></i> <!-- Icon for Covered Topics -->
             <h3>Covered Topics</h3>
             <canvas id="coveredTopicsCanvas"></canvas>
         </div>
 
         <div class="tile" onclick="window.location.href='https://your-github-link-for-uncovered-topics.com'">
+            <i class="fas fa-book-open fa-2x"></i> <!-- Icon for Uncovered Topics -->
             <h3>Uncovered Topics</h3>
             <canvas id="uncoveredTopicsCanvas"></canvas>
         </div>
 
         <div class="tile" onclick="window.location.href='https://your-github-link-for-syllabus.com'">
+            <i class="fas fa-chalkboard-teacher fa-2x"></i> <!-- Icon for Syllabus -->
             <h3>Syllabus</h3>
             <canvas id="syllabusCanvas"></canvas>
         </div>
