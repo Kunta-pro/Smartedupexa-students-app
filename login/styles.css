@@ -1,0 +1,125 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Login Container */
+.login-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button Styles */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.login-btn {
+    background-color: #4CAF50; /* Green for login */
+    color: white;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+/* Forgot Password */
+.forgot-password {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Payment Options */
+.payment-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.payment-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.mtn-btn {
+    background-color: #F1C40F; /* Yellow for MTN */
+}
+
+.mtn-btn:hover {
+    transform: scale(1.05);
+}
+
+.airtel-btn {
+    background-color: #E74C3C; /* Red for Airtel */
+}
+
+.airtel-btn:hover {
+    transform: scale(1.05);
+}
+
+/* Create Account Button */
+.create-account-btn {
+    background-color: #3498DB; /* Blue for Create Account */
+    color: white;
+    margin-top: 20px;
+    padding: 12px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.create-account-btn:hover {
+    background-color: #2980B9;
+}
