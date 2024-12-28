@@ -2,8 +2,11 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: white;
+    background-color: #f7f7f7;
     color: black;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
 }
 
 /* Header */
@@ -27,6 +30,7 @@ body {
     padding: 20px;
     max-width: 1200px;
     margin: 0 auto;
+    flex-grow: 1;
 }
 
 /* Common Tile Styles */
@@ -37,6 +41,9 @@ body {
     border-radius: 10px;
     text-align: center;
     box-sizing: border-box;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .tile h3 {
@@ -51,21 +58,9 @@ body {
     margin-bottom: 15px;
 }
 
-.tile a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold;
-    display: inline-block;
-    margin-top: 10px;
-    padding: 10px;
-    background-color: #005f99;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-}
-
-.tile a:hover {
-    background-color: #004d80;
+.tile:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
 
 /* Ads Section */
@@ -74,8 +69,10 @@ body {
     padding: 20px;
     text-align: center;
     display: flex;
-    flex-direction: column;
     gap: 20px;
+    overflow-x: scroll;
+    flex-wrap: nowrap;
+    animation: scroll 20s linear infinite;
 }
 
 .ad-banner {
@@ -84,8 +81,9 @@ body {
     padding: 20px;
     border-radius: 8px;
     font-size: 18px;
+    min-width: 300px;
+    text-align: center;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s;
 }
 
 .ad-banner:hover {
@@ -96,14 +94,19 @@ body {
     margin: 0;
 }
 
-/* Ensuring Ads section spans remaining space */
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    margin: 0;
+/* Scrolling animation for ads */
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
-.content {
-    flex-grow: 1; /* This ensures the content section takes up available space */
+/* Mobile responsiveness */
+@media screen and (max-width: 768px) {
+    .content {
+        grid-template-columns: 1fr; /* Single column layout for smaller screens */
+    }
 }
