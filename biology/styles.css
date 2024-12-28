@@ -47,7 +47,7 @@ body {
 }
 
 .tile h3 {
-    margin: 0;
+    margin: 10px 0;
     font-size: 18px;
     margin-bottom: 15px;
 }
@@ -56,6 +56,11 @@ body {
     background-color: white;
     border-radius: 8px;
     margin-bottom: 15px;
+}
+
+.tile i {
+    color: white; /* White color for the icons */
+    margin-bottom: 10px;
 }
 
 .tile:hover {
