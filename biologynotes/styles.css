@@ -56,39 +56,48 @@ body {
 
 /* Advert Banner */
 .advert-banner {
-  background-image: url('https://via.placeholder.com/1500x400.png?text=Advert+Banner'); /* Replace with your banner image URL */
-  background-size: cover;
-  background-position: center;
-  height: 400px;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 30px;
+  background-color: #f5f5f5;
+  padding: 20px 0;
+  border: 2px solid #8a2be2;
+  border-radius: 10px;
   display: flex;
   justify-content: center;
-  align-items: center;
-  color: white;
-  text-align: center;
-  margin-top: 30px;
 }
 
-.advert-content h2 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 15px;
+.advert-container {
+  width: 80%;
+  position: relative;
 }
 
-.advert-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
+.advert-slide {
+  display: flex;
+  animation: slide 20s infinite linear;
 }
 
-.advert-link {
-  padding: 10px 20px;
-  background-color: #8a2be2;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  font-size: 18px;
-  transition: background-color 0.3s;
+.advert-img {
+  width: 200px;
+  margin: 0 10px;
+  border-radius: 10px;
 }
 
-.advert-link:hover {
-  background-color: #6a1b9a;
+/* Animation for sliding images */
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
