@@ -4,7 +4,76 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Classification</title>
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: purple;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    section {
+      margin: 20px;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    h1, h2 {
+      margin-bottom: 15px;
+    }
+    h1 {
+      font-size: 2.5em;
+    }
+    h2 {
+      background-color: #e0e0e0;
+      padding: 10px;
+      border-left: 5px solid purple;
+      border-radius: 4px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: purple;
+      color: white;
+    }
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+    ul, ol {
+      margin-left: 20px;
+    }
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 10px 0;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333;
+      color: white;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -14,13 +83,14 @@
   <main>
     <section>
       <h2>Definitions</h2>
-      <p>The branch of biology dealing with naming and classification of living organisms is called taxonomy.</p>
-      <p>Classification is the act of putting living things together into groups on the basis of the characteristics they have in common. A group of organisms with similar characteristics is called a taxon (plural: taxa).</p>
+      <p><strong>Taxonomy:</strong> The branch of biology dealing with naming and classification of living organisms.</p>
+      <p><strong>Classification:</strong> The act of putting living things into groups based on similar characteristics. A group of organisms with similar characteristics is called a <em>taxon</em> (plural: taxa).</p>
     </section>
 
     <section>
       <h2>Carolus Linnaeus</h2>
-      <p>A scientist named Carolus Linnaeus introduced a modern way of classifying organisms in 1753.</p>
+      <p>In 1753, <strong>Carolus Linnaeus</strong> introduced a modern method of classifying organisms.</p>
+      <img src="https://via.placeholder.com/600x300" alt="Image of Carolus Linnaeus">
     </section>
 
     <section>
@@ -33,7 +103,7 @@
 
     <section>
       <h2>Comparison Between Natural and Artificial Classification</h2>
-      <table border="1">
+      <table>
         <tr>
           <th>Natural Classification</th>
           <th>Artificial Classification</th>
@@ -43,11 +113,11 @@
           <td>Only a few characteristics are considered.</td>
         </tr>
         <tr>
-          <td>Members of a group are similar in hereditary patterns.</td>
+          <td>Members are similar in hereditary patterns.</td>
           <td>Members are not similar in hereditary patterns.</td>
         </tr>
         <tr>
-          <td>Stable and most modern method of classification.</td>
+          <td>Stable and modern method of classification.</td>
           <td>May change as knowledge about organisms changes.</td>
         </tr>
         <tr>
@@ -60,31 +130,31 @@
     <section>
       <h2>Importance of Classification</h2>
       <ul>
-        <li>Makes it easy to study organisms by grouping them based on similar characteristics.</li>
-        <li>Helps understand the evolutionary relationship (phylogeny) between different organisms.</li>
-        <li>Prevents confusion around the scientific world by organizing information about organisms.</li>
-        <li>Provides a universal way of arranging information about organisms.</li>
+        <li>Makes it easier to study organisms by grouping them based on characteristics.</li>
+        <li>Helps understand evolutionary relationships (phylogeny).</li>
+        <li>Prevents confusion by organizing information.</li>
+        <li>Provides a universal method for arranging information.</li>
       </ul>
     </section>
 
     <section>
       <h2>Levels of Classification</h2>
-      <p>There are seven levels of taxonomy:</p>
+      <p>The seven levels of taxonomy, from smallest to largest:</p>
       <ol>
-        <li><strong>Species:</strong> A group of organisms with similar characteristics capable of breeding freely to produce fertile offspring.</li>
+        <li><strong>Species:</strong> A group of organisms capable of producing fertile offspring.</li>
         <li><strong>Genus:</strong> A group of closely related species.</li>
         <li><strong>Family:</strong> A group of closely related genera.</li>
         <li><strong>Order:</strong> A group of closely related families.</li>
         <li><strong>Class:</strong> A group of closely related orders.</li>
         <li><strong>Phylum:</strong> A group of closely related classes.</li>
-        <li><strong>Kingdom:</strong> A group of organisms belonging to closely related phyla.</li>
+        <li><strong>Kingdom:</strong> The largest taxonomic group containing related phyla.</li>
       </ol>
     </section>
 
     <section>
       <h2>Scientific Naming of Living Organisms</h2>
-      <p>The <strong>binomial system</strong> gives two unique Latin names to an organism, beginning with the genus name followed by the species name.</p>
-      <table border="1">
+      <p>The <strong>binomial system</strong> gives organisms two Latin names: the genus name and the species name.</p>
+      <table>
         <tr>
           <th>Organism</th>
           <th>Genus</th>
@@ -109,28 +179,27 @@
           <td>Domestica</td>
           <td><i>Musca domestica</i></td>
         </tr>
-        <!-- Add more rows as needed -->
       </table>
     </section>
 
     <section>
       <h2>Dichotomous Key</h2>
-      <p>The word "dichotomy" means divided into two parts. A dichotomous key is a set of instructions used to identify unknown organisms. It provides two contrasting statements leading to a group or specific organism.</p>
+      <p>A <strong>dichotomous key</strong> is a tool that uses two contrasting statements to identify organisms.</p>
       <p>Example:</p>
-      <ol>
-        <li>Compound or simple leaf
+      <ul>
+        <li>1. Compound or simple leaf
           <ul>
-            <li>(a) Compound leaf (leaf divided into leaflets) ... go to 2</li>
-            <li>(b) Simple leaf (leaf not divided into leaflets) ... go to 3</li>
+            <li>(a) Compound leaf ... go to 2</li>
+            <li>(b) Simple leaf ... go to 3</li>
           </ul>
         </li>
-        <li>Arrangement of leaflets
+        <li>2. Arrangement of leaflets
           <ul>
-            <li>(a) Digitate arrangement of leaflets ... Cassava</li>
-            <li>(b) Pinnate arrangement of leaflets ... Eucalyptus</li>
+            <li>(a) Digitate arrangement ... Cassava</li>
+            <li>(b) Pinnate arrangement ... Eucalyptus</li>
           </ul>
         </li>
-      </ol>
+      </ul>
     </section>
   </main>
 
