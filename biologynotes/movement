@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movement in and out of Cells</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: white;
+            background-color: purple;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        h3 {
+            color: darkslateblue;
+        }
+        ul {
+            list-style-type: square;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        table, th, td {
+            border: 1px solid black;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: lightgrey;
+        }
+        .image-placeholder {
+            text-align: center;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Movement in and out of Cells</h1>
+
+    <h2>Introduction to Transport</h2>
+    <p>This refers to the movement of materials from one part of the organism to another.</p>
+
+    <h3>6.1 Requirements of Transport System</h3>
+    <ul>
+        <li><strong>The materials to be transported</strong></li>
+        <li><strong>The medium of transport</strong></li>
+        <li><strong>The channels of transport</strong></li>
+        <li><strong>Energy</strong></li>
+    </ul>
+
+    <h3>Materials to be Transported</h3>
+    <p>In animals, they include respiratory gases like oxygen and carbon dioxide, nitrogenous excretory products such as uric acid, and nutrients like glucose and amino acids. In plants, the materials include oxygen and carbon dioxide.</p>
+
+    <h3>The Medium of Transport</h3>
+    <p>In plants and lower animals, the medium is water, and in vertebrates and some invertebrates (e.g., arthropods and annelids), it is blood.</p>
+
+    <h3>The Channels of Transport</h3>
+    <p>In most animals, transport occurs through blood vessels. In organisms like earthworms, it occurs in the body cavity (coelom). In higher plants, there is a vascular system consisting of xylem and phloem.</p>
+
+    <h3>Energy</h3>
+    <p>Circulation of blood in animals requires energy derived from respiration, which is used for the pumping of the heart and muscle contractions.</p>
+
+    <h2>Movement of Materials In and Out of Cells</h2>
+    <p>Materials such as wastes, water, oxygen, etc., must move in and out of body cells.</p>
+
+    <h3>Structure and Properties of the Cell Membrane</h3>
+
+    <h4>Structure of the Cell Membrane</h4>
+    <ul>
+        <li>Cell membranes are very thin.</li>
+        <li>They are made up of proteins and lipids.</li>
+        <li>The lipid material is arranged in two thin outer layers.</li>
+        <li>The protein part is scattered and embedded inside the lipid layers.</li>
+    </ul>
+    <p>Cell membranes separate and enclose the cell contents from its surrounding environment.</p>
+
+    <h4>Properties of the Cell Membrane</h4>
+    <ul>
+        <li><strong>Small pores:</strong> Freely permeable to water and gases but selectively permeable to other molecules.</li>
+        <li><strong>Sensitivity to pH and temperature:</strong> Protein molecules are affected by extreme conditions.</li>
+        <li><strong>Polarized:</strong> Charged ions enable the control of ion movement into and out of the cell.</li>
+    </ul>
+
+    <h2>Types of Movement</h2>
+    <h3>Pinocytosis</h3>
+    <p>This process involves animal cells taking in liquid materials (cell-drinking).</p>
+
+    <h3>Phagocytosis</h3>
+    <p>Phagocytosis is the process by which animal cells engulf solid materials, forming a food vacuole for digestion.</p>
+
+    <h4>Importance of Phagocytosis</h4>
+    <ul>
+        <li>Used by amoeba during feeding.</li>
+        <li>White blood cells destroy pathogens via phagocytosis.</li>
+        <li>Unicellular organisms egest undigested material by phagocytosis.</li>
+    </ul>
+
+    <h3>6.2 Active Transport</h3>
+    <p>Active transport involves the movement of molecules from a region of low concentration to a region of higher concentration, against the concentration gradient, using energy.</p>
+
+    <h4>Factors Affecting Active Transport</h4>
+    <ul>
+        <li><strong>Concentration of oxygen:</strong> Higher oxygen concentration increases the rate of aerobic respiration, enhancing active transport.</li>
+        <li><strong>Concentration of glucose:</strong> More glucose leads to more energy production, speeding up active transport.</li>
+        <li><strong>Temperature:</strong> High temperatures can denature enzymes and protein carriers, reducing active transport.</li>
+        <li><strong>Enzyme inhibitors:</strong> These chemicals prevent enzymes from functioning, halting energy production and active transport.</li>
+        <li><strong>pH:</strong> Abnormal pH changes can alter protein carrier structures, reducing their efficiency.</li>
+    </ul>
+
+    <h4>Examples of Active Transport</h4>
+    <ul>
+        <li>Uptake of mineral salts by plant roots.</li>
+        <li>Absorption of food molecules like glucose.</li>
+        <li>Selective reabsorption of molecules like glucose in the kidneys.</li>
+        <li>Active ion uptake in fish gills from freshwater.</li>
+    </ul>
+
+    <h4>Importance of Active Transport</h4>
+    <ul>
+        <li>Helps plant roots absorb minerals from the soil.</li>
+        <li>Facilitates the absorption of food materials from the ileum into the bloodstream.</li>
+        <li>Used in the reabsorption of minerals in the kidney during urine formation.</li>
+        <li>Important for secretion and active ion uptake in fish gills.</li>
+    </ul>
+
+    <h3>6.3 Diffusion</h3>
+    <p>Diffusion is the movement of molecules from a region of high concentration to a region of low concentration, occurring due to random molecular motion.</p>
+
+    <h4>Factors Affecting the Rate of Diffusion</h4>
+    <ul>
+        <li><strong>Concentration gradient:</strong> The larger the gradient, the faster the diffusion.</li>
+        <li><strong>Temperature:</strong> Higher temperatures increase molecular kinetic energy, speeding up diffusion.</li>
+        <li><strong>Size/density of molecules:</strong> Smaller and less dense molecules diffuse faster.</li>
+        <li><strong>Distance:</strong> Shorter distances between regions of different concentration increase the rate of diffusion.</li>
+        <li><strong>Surface area:</strong> A larger surface area accelerates diffusion.</li>
+    </ul>
+
+    <h4>Types of Diffusion</h4>
+    <ul>
+        <li><strong>Simple diffusion:</strong> Molecules move freely across the cell membrane.</li>
+        <li><strong>Facilitated diffusion:</strong> Molecules move across the membrane with the help of protein carriers, but no energy is used.</li>
+    </ul>
+
+    <h4>Significance of Diffusion to Organisms</h4>
+    <ul>
+        <li>Facilitates movement of substances in and out of cells.</li>
+        <li>Helps root hairs in plants absorb salts.</li>
+        <li>Aids unicellular organisms like amoeba in gas exchange.</li>
+        <li>Enables nutrient absorption from the gut into the bloodstream.</li>
+        <li>Gaseous exchange occurs in the lungs and fish gills through diffusion.</li>
+        <li>Waste products, like urea, diffuse out of animal cells into the blood.</li>
+    </ul>
+
+    <div class="image-placeholder">
+        <p>Diagram: Diffusion Process</p>
+        <img src="diffusion.png" alt="Diffusion Process" width="80%">
+    </div>
+
+</body>
+</html>
