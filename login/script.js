@@ -25,11 +25,11 @@ function handleLogin(event) {
 
 // Payment Dialer functions
 function dialMTN() {
-    alert("Dialing: *165*3#");
+    alert("pay subscrption on: "0769177279");
 }
 
 function dialAirtel() {
-    alert("Dialing: *185*9#");
+    alert("pay subscription on :"0742311870");
 }
 
 // Create Account function to redirect to WhatsApp with a message
