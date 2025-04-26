@@ -1,4 +1,4 @@
-// Array of predefined usernames and passwords (you can customize these later)
+// Array of predefined usernames and passwords
 const validUsers = [
     { username: "user1", password: "password1" },
     { username: "Saudah", password: "saudahnabs2" },
@@ -23,13 +23,25 @@ function handleLogin(event) {
     }
 }
 
-// Payment Dialer functions
+// Payment Information functions
 function dialMTN() {
-    alert("pay subscrption on: "0769177279");
+    alert(
+        "MTN Payments:\n" +
+        "Pay to: 0769177279\n" +
+        "Daily: 2000 UGX\n" +
+        "Weekly: 10,000 UGX\n" +
+        "Monthly: 35,000 UGX"
+    );
 }
 
 function dialAirtel() {
-    alert("pay subscription on :"0742311870");
+    alert(
+        "Airtel Payments:\n" +
+        "Pay to: 0742311870\n" +
+        "Daily: 2000 UGX\n" +
+        "Weekly: 10,000 UGX\n" +
+        "Monthly: 35,000 UGX"
+    );
 }
 
 // Create Account function to redirect to WhatsApp with a message
