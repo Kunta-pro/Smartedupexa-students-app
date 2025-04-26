@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Natural Sources and Naming of Salts</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 20px;
+            color: #333;
+        }
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50;
+        }
+        table {
+            width: 90%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        th, td {
+            border: 1px solid #cccccc;
+            padding: 12px;
+            text-align: center;
+        }
+        th {
+            background-color: #3498db;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        .section {
+            margin: 40px 0;
+        }
+        p {
+            text-align: center;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Natural Sources and Naming of Salts</h1>
+
+    <div class="section">
+        <h2>2.1 Natural Sources of Salt</h2>
+        <p>Natural sources of salt are sea water and rocks which consist of:</p>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Compound</th>
+                    <th>Formula</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sodium chloride (common salt)</td>
+                    <td>NaCl</td>
+                </tr>
+                <tr>
+                    <td>Sodium sulphate</td>
+                    <td>Na₂SO₄</td>
+                </tr>
+                <tr>
+                    <td>Calcium sulphate</td>
+                    <td>CaSO₄</td>
+                </tr>
+                <tr>
+                    <td>Calcium carbonate</td>
+                    <td>CaCO₃</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Natural Sources of Specific Salts</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name of Salt</th>
+                    <th>Natural Sources</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Sodium chloride</td>
+                    <td>Rock salt and sea water</td>
+                </tr>
+                <tr>
+                    <td>Magnesium chloride</td>
+                    <td>Sea water and brine salt lakes (e.g., Great Salt Lake)</td>
+                </tr>
+                <tr>
+                    <td>Magnesium sulphate</td>
+                    <td>Epsom salts</td>
+                </tr>
+                <tr>
+                    <td>Sodium nitrate</td>
+                    <td>Chile saltpetre</td>
+                </tr>
+                <tr>
+                    <td>Calcium carbonate</td>
+                    <td>Chalk, limestone, marble</td>
+                </tr>
+                <tr>
+                    <td>Potassium chloride</td>
+                    <td>Sea water, potash</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>Naming of Salts from Different Acids</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Acid and its Formula</th>
+                    <th>Class of Salt</th>
+                    <th>Examples</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Hydrochloric acid (HCl)</td>
+                    <td>Chlorides</td>
+                    <td>Sodium chloride, Calcium chloride</td>
+                </tr>
+                <tr>
+                    <td>Nitric acid (HNO₃)</td>
+                    <td>Nitrates</td>
+                    <td>Potassium nitrate, Lead(II) nitrate</td>
+                </tr>
+                <tr>
+                    <td>Sulphuric acid (H₂SO₄)</td>
+                    <td>Sulphates</td>
+                    <td>Magnesium sulphate, Lithium sulphate</td>
+                </tr>
+                <tr>
+                    <td>Sulphuric acid (H₂SO₄)</td>
+                    <td>Hydrogen sulphates</td>
+                    <td>Sodium hydrogen sulphate</td>
+                </tr>
+                <tr>
+                    <td>Carbonic acid (H₂CO₃)</td>
+                    <td>Carbonates</td>
+                    <td>Zinc carbonate, Calcium carbonate</td>
+                </tr>
+                <tr>
+                    <td>Carbonic acid (H₂CO₃)</td>
+                    <td>Hydrogen carbonates</td>
+                    <td>Calcium hydrogen carbonate</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>
